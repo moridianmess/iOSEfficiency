@@ -6,7 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  questionIndexes: Array<number> = [];
 
-  constructor() {}
+  constructor() {
+		this.questionIndexes = new Array(38);
+  }
 
 }

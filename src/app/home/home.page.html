@@ -14,7 +14,29 @@
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <div *ngFor="let i of questionIndexes; let ind = index">
+			<ion-list>
+        <ion-radio-group value="biff">
+          <ion-list-header>
+            <ion-label>Name</ion-label>
+          </ion-list-header>
+      
+          <ion-item>
+            <ion-label>Biff</ion-label>
+            <ion-radio slot="start" value="biff"></ion-radio>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label>Griff</ion-label>
+            <ion-radio slot="start" value="griff"></ion-radio>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label>Buford</ion-label>
+            <ion-radio slot="start" value="buford"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+      </ion-list>
+		</div>
   </div>
 </ion-content>
